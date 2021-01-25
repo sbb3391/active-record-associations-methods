@@ -8,7 +8,6 @@ describe 'Song Methods' do
     genre = Genre.create(name: "Rock")
     @song.genre = genre
     @song.save
-
     expect(@song.get_genre_name).to eq("Rock")
   end
 
